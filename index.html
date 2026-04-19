@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arnab Mallick — Cloud Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-name-block">
+      <div class="header-tag">Cloud Engineer</div>
+      <h1 class="name">Arnab Mallick</h1>
+    </div>
+    <div class="header-contact">
+      <a href="mailto:arnab.mallick.work@gmail.com">arnab.mallick.work@gmail.com</a>
+      <span class="dot">·</span>
+      <span>India</span>
+      <span class="dot">·</span>
+      <a href="https://www.linkedin.com/in/arnab-mallick-work/">LinkedIn</a>
+      <span class="dot">·</span>
+      <a href="https://github.com/Arnab-96-work">GitHub</a>
+      <span class="dot">·</span>
+      <a href="https://deoghdskim8cm.cloudfront.net">Resume Site ↗</a>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <!-- Profile Summary -->
+  <section class="section">
+    <div class="section-label">Profile</div>
+    <div class="section-body">
+      <p class="summary">
+        Cloud Engineer with hands-on experience building and deploying AWS infrastructure, serverless applications, and automated CI/CD pipelines. Electrical Engineering graduate transitioning into cloud with a focus on DevOps practices, infrastructure as code, and operational automation. Built end-to-end projects across compute, storage, networking, and serverless domains on AWS. Seeking a junior cloud or DevOps engineer role to contribute to production infrastructure at a product company or GCC.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+   <section class="section">
+    <div class="section-label">Skills</div>
+    <div class="section-body">
+      <div class="skills-table">
+        <div class="skill-row">
+          <span class="skill-key">Cloud</span>
+          <span class="skill-val">AWS — EC2, S3, VPC, IAM, CloudFront, API Gateway, Lambda, DynamoDB, RDS, CloudWatch, Route53, Auto Scaling, ALB, SNS, ACM</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-key">IaC</span>
+          <span class="skill-val">Terraform</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-key">CI/CD</span>
+          <span class="skill-val">GitHub Actions</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-key">Languages</span>
+          <span class="skill-val">Python (boto3, Flask, pytest), Bash</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-key">Tools</span>
+          <span class="skill-val">Git, GitHub, Linux, AWS CLI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Projects -->
+  <section class="section">
+    <div class="section-label">Projects</div>
+    <div class="section-body projects">
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-title-block">
+            <h3 class="project-title">Cloud Resume Challenge</h3>
+            <span class="project-stack">S3 · CloudFront · Lambda · DynamoDB · API Gateway · Terraform · GitHub Actions</span>
+          </div>
+          <div class="project-links">
+            <a href="https://deoghdskim8cm.cloudfront.net">Live ↗</a>
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Serverless resume website on AWS with real-time visitor tracking and fully automated deployment pipeline.</p>
+        <ul class="project-bullets">
+          <li>Hosted static resume on <strong>S3</strong> with <strong>CloudFront</strong> CDN distribution, HTTPS via ACM, and custom domain on <strong>Route53</strong></li>
+          <li>Built visitor counter API using <strong>API Gateway</strong> + <strong>Lambda</strong> (Python) + <strong>DynamoDB</strong> — zero servers, scales automatically</li>
+          <li>Automated deployments with <strong>GitHub Actions</strong> — every commit to main triggers S3 sync and CloudFront cache invalidation automatically</li>
+          <li>Provisioned all infrastructure as code with <strong>Terraform</strong> — entire stack reproducible with a single command</li>
+          <li>Configured <strong>IAM</strong> least-privilege roles and <strong>CloudWatch</strong> alarms for Lambda error monitoring</li>
+        </ul>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-title-block">
+            <h3 class="project-title">Highly Available AWS Web Application</h3>
+            <span class="project-stack">VPC · ALB · Auto Scaling · EC2 · RDS · Terraform</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Production-grade three-tier architecture with fault tolerance across two availability zones. Entire infrastructure provisioned via Terraform.</p>
+        <ul class="project-bullets">
+          <li>Designed custom <strong>VPC</strong> with public and private subnets across two AZs, Internet Gateway, NAT Gateway, and route tables</li>
+          <li>Configured <strong>Application Load Balancer</strong> with <strong>Auto Scaling Group</strong> (min 2, max 4) — automatically scales on CPU load</li>
+          <li>Deployed <strong>RDS MySQL</strong> in private subnet with Multi-AZ standby for database high availability</li>
+          <li>Implemented security group layering — ALB accepts public traffic, EC2 from ALB only, RDS from EC2 only</li>
+          <li>Provisioned entire stack with <strong>Terraform</strong> — estimated cost ~$X/month (AWS pricing calculator)</li>
+        </ul>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-title-block">
+            <h3 class="project-title">AWS Operational Automation Scripts</h3>
+            <span class="project-stack">Python · boto3 · EC2 · S3 · SNS · Cost Explorer</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Three Python boto3 scripts automating real operational tasks — cost saving, storage hygiene, and spend visibility.</p>
+        <ul class="project-bullets">
+          <li><strong>EC2 Scheduler</strong> — automatically stops dev-tagged EC2 instances at night and starts them in the morning, reducing compute costs</li>
+          <li><strong>S3 Cleanup</strong> — identifies and deletes objects older than 30 days, sends formatted deletion report via <strong>SNS</strong> email notification</li>
+          <li><strong>Cost Reporter</strong> — queries AWS Cost Explorer API and generates a 7-day spend breakdown by service</li>
+        </ul>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-title-block">
+            <h3 class="project-title">Automated Lambda CI/CD Pipeline</h3>
+            <span class="project-stack">GitHub Actions · Lambda · Python · pytest</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">End-to-end CI/CD pipeline for a Python Lambda function — automated testing gates every deployment.</p>
+        <ul class="project-bullets">
+          <li>Built two-stage <strong>GitHub Actions</strong> pipeline — <strong>pytest</strong> runs on every push, deploy only if all tests pass</li>
+          <li>Lambda function calls live exchange rate API, returns USD to INR conversion — deployed automatically on every merge to main</li>
+          <li>Stored AWS credentials as GitHub Secrets — zero hardcoded credentials anywhere in the codebase</li>
+          <li>Demonstrated blocked deploy on test failure — fix restores pipeline, documented in README</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="section-label">Education</div>
+    <div class="section-body">
+      <div class="edu-row">
+        <div>
+          <div class="edu-degree">Bachelor of Technology — Electrical Engineering</div>
+          <div class="edu-school">Your University Name</div>
+        </div>
+        <div class="edu-year">Year</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Certifications -->
+  <section class="section">
+    <div class="section-label">Certifications</div>
+    <div class="section-body">
+      <div class="cert-row">
+        <span class="cert-name">AWS Certified Solutions Architect – Associate (SAA-C03)</span>
+        <span class="cert-badge">In Progress</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="visit-count"><span id="visitor-count">...</span> visits</p>
+  </footer>
+
+</div>
+
+<script>
+  window.onload = function() {
+    fetch('https://tpdoxf7qnk.execute-api.ap-south-1.amazonaws.com/counter')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        document.getElementById('visitor-count').innerText = data.count;
+      })
+      .catch(function(error) {
+        document.getElementById('visitor-count').innerText = '—';
+      });
+  };
+</script>
+
+</body>
+</html>
