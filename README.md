@@ -4,7 +4,7 @@ A serverless resume website built on AWS, featuring a real-time visitor counter 
 
 ## Live Site
 
-[https://YOUR-CLOUDFRONT-URL.cloudfront.net](https://YOUR-CLOUDFRONT-URL.cloudfront.net)
+[https://d1ujxbyfrpoq7k.cloudfront.net/](Resume Site)
 
 ---
 
@@ -68,12 +68,12 @@ terraform plan
 terraform apply
 ```
 
-**After apply — copy these outputs:**
+**After apply — copied these outputs:**
 - `cloudfront_url` → paste into resume and LinkedIn
 - `full_api_endpoint` → paste into index.html fetch call
-- `s3_bucket_name` → add as GitHub Secret
-- `cloudfront_id` → add as GitHub Secret
-- `lambda_function_name` → add as GitHub Secret
+- `s3_bucket_name` → add as GitHub Variable
+- `cloudfront_id` → add as GitHub Variable
+- `lambda_function_name` → add as GitHub Variable
 
 **To destroy all resources:**
 
@@ -101,10 +101,6 @@ Triggers when files inside `backend/` change on a push to main.
 |---|---|
 | `AWS_ACCESS_KEY_ID` | CI/CD IAM user access key |
 | `AWS_SECRET_ACCESS_KEY` | CI/CD IAM user secret key |
-| `S3_BUCKET_NAME` | S3 bucket name from Terraform output |
-| `CLOUDFRONT_DISTRIBUTION_ID` | CloudFront ID from Terraform output |
-| `LAMBDA_FUNCTION_NAME` | Lambda function name from Terraform output |
-
 ---
 
 ## DynamoDB Schema
