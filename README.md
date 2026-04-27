@@ -4,7 +4,7 @@ A serverless resume website built on AWS, featuring a real-time visitor counter 
 
 ## Live Site
 
-[https://d1ujxbyfrpoq7k.cloudfront.net/](Resume Site)
+[https://d1ujxbyfrpoq7k.cloudfront.net] (Resume Site)
 
 ---
 
